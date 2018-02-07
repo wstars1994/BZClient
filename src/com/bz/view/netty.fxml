@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" blendMode="SRC_OVER" cache="true" cacheHint="DEFAULT" depthTest="INHERIT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mouseTransparent="false" prefHeight="400.0" prefWidth="600.0" snapToPixel="true" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.bz.view.MainUi">
+  <children>
+    <ListView id="" fx:id="msgListView" editable="false" focusTraversable="false" layoutX="216.0" layoutY="7.0" prefHeight="237.0" prefWidth="377.0" />
+    <TextArea id="" fx:id="msgTextField" layoutX="216.0" layoutY="247.0" prefHeight="116.0" prefWidth="377.0" promptText="请输入消息" wrapText="true" />
+    <Button id="" fx:id="sendMsgBtn" disable="true" layoutX="542.0" layoutY="370.0" mnemonicParsing="false" onMousePressed="#onMSGSendEvent" style="-fx-color:green" text="发送" />
+    <Button id="" fx:id="closeConnBtn" disable="true" layoutX="14.0" layoutY="369.0" mnemonicParsing="false" onMousePressed="#onConnCloseEvent" style="" text="关闭连接" />
+    <TextField id="" fx:id="nickNameTextField" editable="true" layoutX="216.0" layoutY="369.0" prefWidth="131.0" promptText="昵称" />
+    <TableView id="" fx:id="userList" editable="true" layoutX="7.0" layoutY="7.0" prefHeight="356.0" prefWidth="202.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="201.0" text="聊天室" fx:id="nickName" />
+      </columns>
+    </TableView>
+    <Button fx:id="connBtn" layoutX="94.0" layoutY="370.0" mnemonicParsing="false" onMousePressed="#handleConn" prefWidth="68.0" style="" text="连接" />
+  </children>
+</AnchorPane>
