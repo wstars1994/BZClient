@@ -104,7 +104,7 @@ public class MainUi extends Application{
 						if(!login) {
 							if(socket==null||socket.isClosed()) {
 								socket = new Socket();  
-								socket.connect(new InetSocketAddress("59.110.227.25",6061));  
+								socket.connect(new InetSocketAddress("192.168.1.109",8090));  
 								socket.setKeepAlive(true);
 								socket.setSoTimeout(1000*60*60);
 								os = socket.getOutputStream();
